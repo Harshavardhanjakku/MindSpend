@@ -19,6 +19,16 @@ with open("myexpenses.json") as f :
             categories[x]+=expense['amount']
 print(categories)
 print(f"Lowest:{lowest} and Highest :{highest}")
-if not flag:
-    plt.pie(categories.values(),labels=categories.keys(),colors=mycolors,autopct='%1.1f%%')
+def Showpiechart():
+    if not flag:
+        plt.pie(categories.values(),labels=categories.keys(),colors=mycolors,autopct='%1.1f%%')
+        plt.title("Expenses Piechart by category")
+        plt.show() 
+def ShowBargraph():
+    plt.bar(categories.keys(),categories.values(),color=mycolors)
+    plt.xlabel("Category")
+    plt.ylabel("Amount Spent")
     plt.show()
+
+Showpiechart()
+ShowBargraph()
