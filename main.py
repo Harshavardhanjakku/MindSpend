@@ -14,14 +14,17 @@ class Expense:
         }
         return mydic  
     def calculate_total():
-        total=0
+        total = 0
         with open("myexpenses.json") as f:
             data = json.load(f)
             for expense in data:
-                total+=expense["amount"]
+                total += expense["amount"]
         return total
-new_expense=Expense("11-04-2026","Travel",2500,"Trip to Vizag").convertdict()
-print(new_expense)
-print(Expense.calculate_total())
-with open("myexpenses.json","w") as f:
-    json.dump(new_expense,f)
+def Add_Expense():
+    new_expense=Expense("10-2-2024","Food",2600,"Biryani").convertdict()
+    with open("myexpenses.json") as f:
+        data = json.load(f)
+    data.append(new_expense)
+    with open("myexpenses.json","w") as f:
+        json.dump(data,f,indent=4)
+Add_Expense()

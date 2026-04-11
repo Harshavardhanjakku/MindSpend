@@ -1,1 +1,14 @@
-{"date": "11-04-2026", "category": "Travel", "amount": 2500, "description": "Trip to Vizag"}
+[
+    {
+        "date": "11-04-2026",
+        "category": "Travel",
+        "amount": 2500,
+        "description": "Trip to Vizag"
+    },
+    {
+        "date": "10-2-2024",
+        "category": "Food",
+        "amount": 2600,
+        "description": "Biryani"
+    }
+]
