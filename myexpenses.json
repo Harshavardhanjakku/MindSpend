@@ -1,26 +1,62 @@
 [
     {
-        "date": "11-04-2026",
-        "category": "Travel",
-        "amount": 2500,
-        "description": "Trip to Vizag"
-    },
-    {
-        "date": "10-2-2024",
+        "date": "05-03-2026",
         "category": "Food",
-        "amount": 2600,
-        "description": "Biryani"
+        "amount": 450,
+        "description": "Lunch at local restaurant"
     },
     {
-        "date": "22-06-2023",
-        "category": "Cloth",
-        "amount": 3000,
-        "description": "Dress and Pant"
+        "date": "07-03-2026",
+        "category": "Travel",
+        "amount": 1200,
+        "description": "Bus tickets for weekend trip"
     },
     {
-        "date": "28-06-2026",
+        "date": "10-03-2026",
+        "category": "Bills",
+        "amount": 1800,
+        "description": "Electricity bill payment"
+    },
+    {
+        "date": "12-03-2026",
+        "category": "Entertainment",
+        "amount": 600,
+        "description": "Movie tickets and snacks"
+    },
+    {
+        "date": "15-03-2026",
         "category": "Shopping",
-        "amount": 3000,
-        "description": "Furiniture shopping"
+        "amount": 2200,
+        "description": "Bought new shoes and accessories"
+    },
+    {
+        "date": "18-03-2026",
+        "category": "Food",
+        "amount": 300,
+        "description": "Evening snacks and coffee"
+    },
+    {
+        "date": "20-03-2026",
+        "category": "Bills",
+        "amount": 999,
+        "description": "Monthly internet subscription"
+    },
+    {
+        "date": "22-03-2026",
+        "category": "Travel",
+        "amount": 800,
+        "description": "Auto and cab charges"
+    },
+    {
+        "date": "25-03-2026",
+        "category": "Entertainment",
+        "amount": 1200,
+        "description": "Concert tickets"
+    },
+    {
+        "date": "28-03-2026",
+        "category": "Shopping",
+        "amount": 3500,
+        "description": "Furniture and home decor items"
     }
 ]
