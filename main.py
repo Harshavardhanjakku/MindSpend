@@ -1,4 +1,4 @@
-import json
+import json 
 class Expense: 
     def __init__(self,date, category, amount, description):
         self.date = date 
@@ -21,10 +21,12 @@ class Expense:
                 total += expense["amount"]
         return total
 def Add_Expense():
-    new_expense=Expense("10-2-2024","Food",2600,"Biryani").convertdict()
+    new_expense=Expense("28-06-2026","Shopping",3000,"Furiniture shopping").convertdict()
     with open("myexpenses.json") as f:
-        data = json.load(f)
+        data = json.load(f) 
     data.append(new_expense)
     with open("myexpenses.json","w") as f:
         json.dump(data,f,indent=4)
+
 Add_Expense()
+print(Expense.calculate_total())

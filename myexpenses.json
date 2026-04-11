@@ -10,5 +10,17 @@
         "category": "Food",
         "amount": 2600,
         "description": "Biryani"
+    },
+    {
+        "date": "22-06-2023",
+        "category": "Cloth",
+        "amount": 3000,
+        "description": "Dress and Pant"
+    },
+    {
+        "date": "28-06-2026",
+        "category": "Shopping",
+        "amount": 3000,
+        "description": "Furiniture shopping"
     }
 ]
