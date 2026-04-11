@@ -21,4 +21,8 @@ expenses = """
 
 data = json.loads(expenses)
 
-print(data)
+tot=0
+for expense in data["Harsha"]:
+    print(expense)
+    tot+=expense["amount"]
+print("Final Expense:",tot)
