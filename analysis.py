@@ -1,5 +1,6 @@
 import json
 import matplotlib.pyplot as plt
+from datetime import datetime
 categories={"Food":0,"Travel":0,"Shopping":0,"Bills":0,"Entertainment":0}
 mycolors = [ "blue","pink","green", "yellow",  "purple"]
 lowest=float('inf')
@@ -32,3 +33,8 @@ def ShowBargraph():
 
 Showpiechart()
 ShowBargraph()
+
+myfinal = sorted(
+    data,
+    key=lambda x: datetime.strptime(x["date"], "%d-%m-%Y")
+)
