@@ -31,7 +31,7 @@ monthly_expenses = {
 with open("myexpenses.json") as f:
     data=json.load(f)
 montlydata = client.responses.create(
-    input=str(monthly_expenses) +"I want only dictonary just like the attched montly expenses no ** nothing"+str(data),
+    input=str(monthly_expenses) +"I want only dictonary just like the attached montly expenses no ** nothing"+str(data),
     model="openai/gpt-oss-20b",
 )
 print(montlydata.output_text)
