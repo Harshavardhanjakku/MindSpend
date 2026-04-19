@@ -1,73 +1,374 @@
 [
-    {"date":"03-01-2026","category":"Food","amount":320,"description":"Breakfast and coffee"},
-    {"date":"08-01-2026","category":"Travel","amount":900,"description":"Train ticket booking"},
-    {"date":"12-01-2026","category":"Bills","amount":1500,"description":"Electricity bill payment"},
-    {"date":"18-01-2026","category":"Entertainment","amount":700,"description":"Movie night with friends"},
-    {"date":"25-01-2026","category":"Shopping","amount":2000,"description":"Clothes purchase"},
-
-    {"date":"02-02-2026","category":"Food","amount":450,"description":"Dinner at restaurant"},
-    {"date":"06-02-2026","category":"Travel","amount":600,"description":"Cab rides"},
-    {"date":"10-02-2026","category":"Bills","amount":1200,"description":"Water and maintenance bill"},
-    {"date":"14-02-2026","category":"Entertainment","amount":1500,"description":"Valentine's day outing"},
-    {"date":"22-02-2026","category":"Shopping","amount":1800,"description":"Online accessories shopping"},
-
-    {"date":"05-03-2026","category":"Food","amount":450,"description":"Lunch at local restaurant"},
-    {"date":"09-03-2026","category":"Travel","amount":800,"description":"Bus tickets"},
-    {"date":"13-03-2026","category":"Bills","amount":1800,"description":"Electricity bill"},
-    {"date":"17-03-2026","category":"Entertainment","amount":600,"description":"Streaming subscriptions"},
-    {"date":"26-03-2026","category":"Shopping","amount":2500,"description":"Shoes and accessories"},
-
-    {"date":"04-04-2026","category":"Food","amount":300,"description":"Snacks and tea"},
-    {"date":"08-04-2026","category":"Travel","amount":1200,"description":"Weekend trip transport"},
-    {"date":"11-04-2026","category":"Bills","amount":1400,"description":"Internet bill"},
-    {"date":"16-04-2026","category":"Entertainment","amount":900,"description":"Concert tickets"},
-    {"date":"23-04-2026","category":"Shopping","amount":2200,"description":"Home decor items"},
-
-    {"date":"03-05-2026","category":"Food","amount":500,"description":"Dinner with family"},
-    {"date":"09-05-2026","category":"Travel","amount":700,"description":"Fuel expenses"},
-    {"date":"14-05-2026","category":"Bills","amount":1600,"description":"Electricity and water"},
-    {"date":"19-05-2026","category":"Entertainment","amount":800,"description":"Game night expenses"},
-    {"date":"27-05-2026","category":"Shopping","amount":3000,"description":"Electronics purchase"},
-
-    {"date":"02-06-2026","category":"Food","amount":350,"description":"Lunch outside"},
-    {"date":"06-06-2026","category":"Travel","amount":900,"description":"Train journey"},
-    {"date":"12-06-2026","category":"Bills","amount":1700,"description":"Utility bills"},
-    {"date":"18-06-2026","category":"Entertainment","amount":1200,"description":"Amusement park visit"},
-    {"date":"25-06-2026","category":"Shopping","amount":2600,"description":"Furniture purchase"},
-
-    {"date":"01-07-2026","category":"Food","amount":400,"description":"Breakfast and snacks"},
-    {"date":"07-07-2026","category":"Travel","amount":1000,"description":"Flight booking"},
-    {"date":"13-07-2026","category":"Bills","amount":1900,"description":"Electricity bill"},
-    {"date":"20-07-2026","category":"Entertainment","amount":700,"description":"Movie tickets"},
-    {"date":"28-07-2026","category":"Shopping","amount":2800,"description":"Clothing and accessories"},
-
-    {"date":"03-08-2026","category":"Food","amount":380,"description":"Lunch outing"},
-    {"date":"08-08-2026","category":"Travel","amount":850,"description":"Bus and auto charges"},
-    {"date":"12-08-2026","category":"Bills","amount":1500,"description":"Internet and electricity"},
-    {"date":"18-08-2026","category":"Entertainment","amount":950,"description":"Concert entry"},
-    {"date":"26-08-2026","category":"Shopping","amount":3200,"description":"Festival shopping"},
-
-    {"date":"04-09-2026","category":"Food","amount":420,"description":"Dinner outside"},
-    {"date":"09-09-2026","category":"Travel","amount":780,"description":"Fuel and parking"},
-    {"date":"14-09-2026","category":"Bills","amount":1600,"description":"Monthly utilities"},
-    {"date":"19-09-2026","category":"Entertainment","amount":1100,"description":"Event tickets"},
-    {"date":"27-09-2026","category":"Shopping","amount":2900,"description":"Online sale purchases"},
-
-    {"date":"02-10-2026","category":"Food","amount":500,"description":"Festival food expenses"},
-    {"date":"08-10-2026","category":"Travel","amount":1300,"description":"Holiday travel"},
-    {"date":"12-10-2026","category":"Bills","amount":1800,"description":"Electricity bill"},
-    {"date":"18-10-2026","category":"Entertainment","amount":1400,"description":"Festival events"},
-    {"date":"25-10-2026","category":"Shopping","amount":3500,"description":"Festive shopping"},
-
-    {"date":"03-11-2026","category":"Food","amount":450,"description":"Dining out"},
-    {"date":"07-11-2026","category":"Travel","amount":900,"description":"Cab and fuel"},
-    {"date":"13-11-2026","category":"Bills","amount":1700,"description":"Monthly bills"},
-    {"date":"19-11-2026","category":"Entertainment","amount":1000,"description":"Cinema and snacks"},
-    {"date":"28-11-2026","category":"Shopping","amount":3100,"description":"Electronics and gadgets"},
-
-    {"date":"05-12-2026","category":"Food","amount":600,"description":"Year-end dinner"},
-    {"date":"10-12-2026","category":"Travel","amount":1500,"description":"Holiday trip booking"},
-    {"date":"15-12-2026","category":"Bills","amount":2000,"description":"Electricity and maintenance"},
-    {"date":"20-12-2026","category":"Entertainment","amount":1800,"description":"New year party"},
-    {"date":"28-12-2026","category":"Shopping","amount":4000,"description":"Year-end shopping"}
+    {
+        "date": "03-01-2026",
+        "category": "Food",
+        "amount": 320,
+        "description": "Breakfast and coffee"
+    },
+    {
+        "date": "08-01-2026",
+        "category": "Travel",
+        "amount": 900,
+        "description": "Train ticket booking"
+    },
+    {
+        "date": "12-01-2026",
+        "category": "Bills",
+        "amount": 1500,
+        "description": "Electricity bill payment"
+    },
+    {
+        "date": "18-01-2026",
+        "category": "Entertainment",
+        "amount": 700,
+        "description": "Movie night with friends"
+    },
+    {
+        "date": "25-01-2026",
+        "category": "Shopping",
+        "amount": 2000,
+        "description": "Clothes purchase"
+    },
+    {
+        "date": "02-02-2026",
+        "category": "Food",
+        "amount": 450,
+        "description": "Dinner at restaurant"
+    },
+    {
+        "date": "06-02-2026",
+        "category": "Travel",
+        "amount": 600,
+        "description": "Cab rides"
+    },
+    {
+        "date": "10-02-2026",
+        "category": "Bills",
+        "amount": 1200,
+        "description": "Water and maintenance bill"
+    },
+    {
+        "date": "14-02-2026",
+        "category": "Entertainment",
+        "amount": 1500,
+        "description": "Valentine's day outing"
+    },
+    {
+        "date": "22-02-2026",
+        "category": "Shopping",
+        "amount": 1800,
+        "description": "Online accessories shopping"
+    },
+    {
+        "date": "05-03-2026",
+        "category": "Food",
+        "amount": 450,
+        "description": "Lunch at local restaurant"
+    },
+    {
+        "date": "09-03-2026",
+        "category": "Travel",
+        "amount": 800,
+        "description": "Bus tickets"
+    },
+    {
+        "date": "13-03-2026",
+        "category": "Bills",
+        "amount": 1800,
+        "description": "Electricity bill"
+    },
+    {
+        "date": "17-03-2026",
+        "category": "Entertainment",
+        "amount": 600,
+        "description": "Streaming subscriptions"
+    },
+    {
+        "date": "26-03-2026",
+        "category": "Shopping",
+        "amount": 2500,
+        "description": "Shoes and accessories"
+    },
+    {
+        "date": "04-04-2026",
+        "category": "Food",
+        "amount": 300,
+        "description": "Snacks and tea"
+    },
+    {
+        "date": "08-04-2026",
+        "category": "Travel",
+        "amount": 1200,
+        "description": "Weekend trip transport"
+    },
+    {
+        "date": "11-04-2026",
+        "category": "Bills",
+        "amount": 1400,
+        "description": "Internet bill"
+    },
+    {
+        "date": "16-04-2026",
+        "category": "Entertainment",
+        "amount": 900,
+        "description": "Concert tickets"
+    },
+    {
+        "date": "23-04-2026",
+        "category": "Shopping",
+        "amount": 2200,
+        "description": "Home decor items"
+    },
+    {
+        "date": "03-05-2026",
+        "category": "Food",
+        "amount": 500,
+        "description": "Dinner with family"
+    },
+    {
+        "date": "09-05-2026",
+        "category": "Travel",
+        "amount": 700,
+        "description": "Fuel expenses"
+    },
+    {
+        "date": "14-05-2026",
+        "category": "Bills",
+        "amount": 1600,
+        "description": "Electricity and water"
+    },
+    {
+        "date": "19-05-2026",
+        "category": "Entertainment",
+        "amount": 800,
+        "description": "Game night expenses"
+    },
+    {
+        "date": "27-05-2026",
+        "category": "Shopping",
+        "amount": 3000,
+        "description": "Electronics purchase"
+    },
+    {
+        "date": "02-06-2026",
+        "category": "Food",
+        "amount": 350,
+        "description": "Lunch outside"
+    },
+    {
+        "date": "06-06-2026",
+        "category": "Travel",
+        "amount": 900,
+        "description": "Train journey"
+    },
+    {
+        "date": "12-06-2026",
+        "category": "Bills",
+        "amount": 1700,
+        "description": "Utility bills"
+    },
+    {
+        "date": "18-06-2026",
+        "category": "Entertainment",
+        "amount": 1200,
+        "description": "Amusement park visit"
+    },
+    {
+        "date": "25-06-2026",
+        "category": "Shopping",
+        "amount": 2600,
+        "description": "Furniture purchase"
+    },
+    {
+        "date": "01-07-2026",
+        "category": "Food",
+        "amount": 400,
+        "description": "Breakfast and snacks"
+    },
+    {
+        "date": "07-07-2026",
+        "category": "Travel",
+        "amount": 1000,
+        "description": "Flight booking"
+    },
+    {
+        "date": "13-07-2026",
+        "category": "Bills",
+        "amount": 1900,
+        "description": "Electricity bill"
+    },
+    {
+        "date": "20-07-2026",
+        "category": "Entertainment",
+        "amount": 700,
+        "description": "Movie tickets"
+    },
+    {
+        "date": "28-07-2026",
+        "category": "Shopping",
+        "amount": 2800,
+        "description": "Clothing and accessories"
+    },
+    {
+        "date": "03-08-2026",
+        "category": "Food",
+        "amount": 380,
+        "description": "Lunch outing"
+    },
+    {
+        "date": "08-08-2026",
+        "category": "Travel",
+        "amount": 850,
+        "description": "Bus and auto charges"
+    },
+    {
+        "date": "12-08-2026",
+        "category": "Bills",
+        "amount": 1500,
+        "description": "Internet and electricity"
+    },
+    {
+        "date": "18-08-2026",
+        "category": "Entertainment",
+        "amount": 950,
+        "description": "Concert entry"
+    },
+    {
+        "date": "26-08-2026",
+        "category": "Shopping",
+        "amount": 3200,
+        "description": "Festival shopping"
+    },
+    {
+        "date": "04-09-2026",
+        "category": "Food",
+        "amount": 420,
+        "description": "Dinner outside"
+    },
+    {
+        "date": "09-09-2026",
+        "category": "Travel",
+        "amount": 780,
+        "description": "Fuel and parking"
+    },
+    {
+        "date": "14-09-2026",
+        "category": "Bills",
+        "amount": 1600,
+        "description": "Monthly utilities"
+    },
+    {
+        "date": "19-09-2026",
+        "category": "Entertainment",
+        "amount": 1100,
+        "description": "Event tickets"
+    },
+    {
+        "date": "27-09-2026",
+        "category": "Shopping",
+        "amount": 2900,
+        "description": "Online sale purchases"
+    },
+    {
+        "date": "02-10-2026",
+        "category": "Food",
+        "amount": 500,
+        "description": "Festival food expenses"
+    },
+    {
+        "date": "08-10-2026",
+        "category": "Travel",
+        "amount": 1300,
+        "description": "Holiday travel"
+    },
+    {
+        "date": "12-10-2026",
+        "category": "Bills",
+        "amount": 1800,
+        "description": "Electricity bill"
+    },
+    {
+        "date": "18-10-2026",
+        "category": "Entertainment",
+        "amount": 1400,
+        "description": "Festival events"
+    },
+    {
+        "date": "25-10-2026",
+        "category": "Shopping",
+        "amount": 3500,
+        "description": "Festive shopping"
+    },
+    {
+        "date": "03-11-2026",
+        "category": "Food",
+        "amount": 450,
+        "description": "Dining out"
+    },
+    {
+        "date": "07-11-2026",
+        "category": "Travel",
+        "amount": 900,
+        "description": "Cab and fuel"
+    },
+    {
+        "date": "13-11-2026",
+        "category": "Bills",
+        "amount": 1700,
+        "description": "Monthly bills"
+    },
+    {
+        "date": "19-11-2026",
+        "category": "Entertainment",
+        "amount": 1000,
+        "description": "Cinema and snacks"
+    },
+    {
+        "date": "28-11-2026",
+        "category": "Shopping",
+        "amount": 3100,
+        "description": "Electronics and gadgets"
+    },
+    {
+        "date": "05-12-2026",
+        "category": "Food",
+        "amount": 600,
+        "description": "Year-end dinner"
+    },
+    {
+        "date": "10-12-2026",
+        "category": "Travel",
+        "amount": 1500,
+        "description": "Holiday trip booking"
+    },
+    {
+        "date": "15-12-2026",
+        "category": "Bills",
+        "amount": 2000,
+        "description": "Electricity and maintenance"
+    },
+    {
+        "date": "20-12-2026",
+        "category": "Entertainment",
+        "amount": 1800,
+        "description": "New year party"
+    },
+    {
+        "date": "28-12-2026",
+        "category": "Shopping",
+        "amount": 4000,
+        "description": "Year-end shopping"
+    },
+    {
+        "date": "28-06-2026",
+        "category": "Shopping",
+        "amount": 3000,
+        "description": "Furinture shopping"
+    },
+    {
+        "date": "20-04-2026",
+        "category": "Food",
+        "amount": 300,
+        "description": "Chicken Noodles"
+    }
 ]

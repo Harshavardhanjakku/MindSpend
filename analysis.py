@@ -49,5 +49,9 @@ Showpiechart()
 ShowBargraph()
 
 
-
-    
+SortedCategory=sorted(categories, key=lambda x: x[1])
+print(SortedCategory)
+MaxspentCategory=SortedCategory[0]
+LowspentCategory=SortedCategory[-1]
+print(f"Highest Money is Spent on {MaxspentCategory} with Rs.{categories[MaxspentCategory]}")
+print(f"Highest Money is Spent on {LowspentCategory} with Rs.{categories[LowspentCategory]}")
