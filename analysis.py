@@ -55,6 +55,6 @@ SortedCategory=sorted(categories, key=lambda x: categories[x],reverse=True)
 MaxspentCategory=SortedCategory[0]
 maxbudget=categories[MaxspentCategory]
 LowspentCategory=SortedCategory[-1]
-minbudget={categories[LowspentCategory]}
+minbudget=categories[LowspentCategory]
 # print(f"Highest Money is Spent on {MaxspentCategory} with Rs.{maxbudget}")
 # print(f"Highest Money is Spent on {LowspentCategory} with Rs.{minbudget}")
