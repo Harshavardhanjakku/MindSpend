@@ -44,14 +44,17 @@ def ShowLinegraph(n):
     plt.xticks(rotation=80)  
     plt.show()
 numberofdays=10
-ShowLinegraph(numberofdays)
-Showpiechart()
-ShowBargraph()
+def ShowGraphs():
+    ShowLinegraph(numberofdays)
+    Showpiechart()
+    ShowBargraph()
 
 
-SortedCategory=sorted(categories, key=lambda x: x[1])
-print(SortedCategory)
+SortedCategory=sorted(categories, key=lambda x: categories[x],reverse=True)
+# print(SortedCategory)
 MaxspentCategory=SortedCategory[0]
+maxbudget=categories[MaxspentCategory]
 LowspentCategory=SortedCategory[-1]
-print(f"Highest Money is Spent on {MaxspentCategory} with Rs.{categories[MaxspentCategory]}")
-print(f"Highest Money is Spent on {LowspentCategory} with Rs.{categories[LowspentCategory]}")
+minbudget={categories[LowspentCategory]}
+# print(f"Highest Money is Spent on {MaxspentCategory} with Rs.{maxbudget}")
+# print(f"Highest Money is Spent on {LowspentCategory} with Rs.{minbudget}")
