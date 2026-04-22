@@ -20,18 +20,18 @@ class Expense:
             for expense in data:
                 total += expense["amount"]
         return total
+
 def Add_Expense(date,category,price,description):
-    new_expense=Expense(date,category,price,description).convertdict()
+    newExpense=Expense(date,category,price,description).convertdict()
     with open("myexpenses.json") as f:
         data = json.load(f) 
-    data.append(new_expense)
+    data.append(newExpense)
     with open("myexpenses.json","w") as f:
         json.dump(data,f,indent=4)
-date=input("Enter the Date in format (DD-MM-YYYY) :")
-category=input("Enter the Category (Food, Travel, Shopping, Bills, Entertainment) :")
-category=category.lower()
-category=category.title()
-price=int(input("Enter the amount :"))
-description=input("Enter the description :")
-Add_Expense(date,category,price,description)
-print(Expense.calculate_total())
+
+def RunInput(date,category,price,description):
+    category=category.lower()
+    category=category.title()
+    price=int(price)
+    Add_Expense(date,category,price,description)
+    print(Expense.calculate_total())
