@@ -400,5 +400,11 @@
         "category": "Food",
         "amount": 320,
         "description": "Street food"
+    },
+    {
+        "date": "19-06-2026",
+        "category": "Food",
+        "amount": 170,
+        "description": "Gupchup"
     }
 ]

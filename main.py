@@ -63,4 +63,4 @@ def RunInput(date, category, price, description):
 
     print(Expense.calculate_total())
 if __name__ == "__main__":
-    import appui
+    import appui as appui
