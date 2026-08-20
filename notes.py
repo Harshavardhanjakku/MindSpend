@@ -1,29 +1,43 @@
-from openai import OpenAI
 import os
-from dotenv import load_dotenv
 import json
+from dotenv import load_dotenv
+from groq import Groq
 
 load_dotenv()
 
-AiAnalysis = "Unable to generate AI analysis."
+AiAnalysis = "No AI insight available."
 
-try:
+try: 
+    api_key = os.getenv("GROQ_API_KEY")
 
-    client = OpenAI(
-        api_key=os.getenv("GROQ_API_KEY"),
-        base_url="https://api.groq.com/openai/v1",
-    )
-
-    with open("MyExpenses.json") as f:
-        data = json.load(f)
-
-    response = client.responses.create(
-        input=str(data) + " Conclusion in one line about my budget to save money without using hyphen",
+    if not api_key:
+        raise ValueError("GROQ_API_KEY not found in .env file") 
+    client = Groq(api_key=api_key) 
+    with open("MyExpenses.json", "r", encoding="utf-8") as f:
+        data = json.load(f) 
+    response = client.chat.completions.create(
         model="openai/gpt-oss-20b",
-    )
+        messages=[
+            {
+                "role": "system",
+                "content": (
+                    "You are a personal finance assistant for the MindSpend app. "
+                    "Analyze the user's expenses and provide one short, practical "
+                    "money-saving tip. Keep the answer simple and under 2 sentences."
+                )
+            },
+            {
+                "role": "user",
+                "content": f"Here are my expenses:\n{json.dumps(data, indent=2)}"
+            }
+        ],
+        max_tokens=100
+    ) 
+    AiAnalysis = response.choices[0].message.content
 
-    AiAnalysis = response.output_text
+    print("AI INSIGHT:")
+    print(AiAnalysis)
 
 except Exception as e:
-
-    AiAnalysis = f"AI Analysis unavailable: {e}"
+    print("FULL ERROR:", e)
+    AiAnalysis = "Unable to generate AI insight."

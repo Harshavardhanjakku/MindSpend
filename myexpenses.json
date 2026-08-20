@@ -384,12 +384,6 @@
         "description": "Shirts and Pants"
     },
     {
-        "date": "10-12-1012",
-        "category": "Entertainment",
-        "amount": 200,
-        "description": "Went to movie "
-    },
-    {
         "date": "09-04-2026",
         "category": "Travel",
         "amount": 22,
@@ -406,5 +400,23 @@
         "category": "Food",
         "amount": 170,
         "description": "Gupchup"
+    },
+    {
+        "date": "20-08-2006",
+        "category": "Travel",
+        "amount": 200,
+        "description": "SRU "
+    },
+    {
+        "date": "21-08-2027",
+        "category": "Food",
+        "amount": 888,
+        "description": "Chicken Mandi"
+    },
+    {
+        "date": "22-06-2028",
+        "category": "Shopping",
+        "amount": 9999,
+        "description": "Kurthi and Sharwani"
     }
 ]
